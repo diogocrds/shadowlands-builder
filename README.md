@@ -19,6 +19,12 @@ npm install gh-pages --save-dev
 npm start
 ```
 
+## Deploying
+
+```sh
+npm run deploy
+```
+
 ## License
 
 MIT
