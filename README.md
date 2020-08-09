@@ -10,7 +10,7 @@
 
 ```sh
 npx create-react-app todo-list
-npm install react-router-dom
+npm install gh-pages --save-dev
 ```
 
 ## Running
