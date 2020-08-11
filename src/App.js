@@ -20,13 +20,12 @@ function App() {
 
   useEffect(() => {
     if (watchlistItem !== null) {
-      console.log('item add to the list n: ' + watchlistItem.name)
-      console.log('item add to the list c: ' + watchlistItem.class)
       setWatchlist(
         watchlist.concat({
           id: watchlist.length,
           name: watchlistItem.name,
           class: watchlistItem.class,
+          slots: watchlistItem.slots,
         })
       )
       setWatchlistItem(null)

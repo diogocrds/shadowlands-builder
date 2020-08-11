@@ -79,6 +79,25 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+.app__content .slotslist {
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+.slotslist .slotslist__slots {
+  display: flex;
+  margin: 5px 0;
+}
+.slotslist__slots .column {
+  width: 50%;
+}
+.slotslist__slots .column .slot {
+  width: 95%;
+  height: 90px;
 }
 .watchlist .watchlist__item {
   display: flex;
@@ -87,7 +106,7 @@ body {
 .watchlist__item .name {
   width: 63%;
 }
-.watchlist__item .class {
+.watchlist .watchlist__item .class {
   width: 32%;
 }
 .watchlist .watchlist__btn {

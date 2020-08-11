@@ -49,8 +49,6 @@ function Classes(props) {
   const [watchlistItem, setWatchlistItem] = useState(null)
   useEffect(() => {
     if (watchlistItem !== null) {
-      console.log('classes add n: ' + watchlistItem.name)
-      console.log('classes add c: ' + watchlistItem.class)
       props.onChange(watchlistItem)
       setWatchlistItem(null)
     }

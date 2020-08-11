@@ -5,9 +5,7 @@ function Class(props) {
   const leggos = leggosData.filter((c) => c.class === props.class)
 
   function handleInputChange(event) {
-    console.log('target value: ' + event.target.value)
-    console.log('target name:' + event.target.name)
-    props.onChange({ name: event.target.value, class: event.target.name })
+    props.onChange(JSON.parse(event.target.value))
   }
 
   return (
@@ -36,8 +34,11 @@ function Class(props) {
                 </div>
                 <button
                   className='single-spec__btn'
-                  value={i.name}
-                  name={props.class}
+                  value={JSON.stringify({
+                    name: i.name,
+                    class: props.class,
+                    slots: i.slots,
+                  })}
                   onClick={handleInputChange}
                 >
                   Add to list
