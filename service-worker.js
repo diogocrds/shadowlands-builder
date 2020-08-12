@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/shadowlands-builder/precache-manifest.3c8855e4a6184dad91981d41c979d9d7.js"
+  "/shadowlands-builder/precache-manifest.80ed46b84cd69c071ba85b5d564cf155.js"
 );
 
 self.addEventListener('message', (event) => {
