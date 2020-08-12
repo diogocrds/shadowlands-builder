@@ -128,7 +128,7 @@ function Watchlist(props) {
               <div className='slot'>
                 <h4>Ring</h4>
                 {watchlist
-                  .filter((c) => c.slots.includes('Ring'))
+                  .filter((c) => c.slots.includes('Finger'))
                   .map((item) => (
                     <div key={item.name + Math.random()}>{item.name}</div>
                   ))}
